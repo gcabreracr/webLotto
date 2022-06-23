@@ -1,15 +1,14 @@
 <?php
-class Views{
-
-    public function getView($controlador,$vista,$date=''){
-
+class Views 
+{
+    public function getView($controlador, $vista, $data="")
+    {
         $controlador = get_class($controlador);
-
-        if($controlador=='Home'){
-            $vista='Views/'.$vista.'php';            
+        if ($controlador == 'Home') {
+            $vista = 'Views/'.$vista.'.php';
         }else{
-            $vista='Views/'.$controlador.'/'.$vista.'php';   
+            $vista = 'Views/'.$controlador.'/'.$vista.'.php';
         }
-        require_once $vista;
+        require $vista;
     }
 }
