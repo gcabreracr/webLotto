@@ -5,7 +5,7 @@ class Views
     {
         $controlador = get_class($controlador);
         if ($controlador == 'Home') {
-            $vista = 'Views/'.$vista.'.php';
+            $vista = 'Views/Home/'.$vista.'.php';
         }else{
             $vista = 'Views/'.$controlador.'/'.$vista.'.php';
         }

@@ -22,7 +22,7 @@ if (!empty($array[2])) {
 
 require_once 'Config/App/autoload.php';
 
-$dirController = "Controller/".$controller.".php";
+$dirController = "Controllers/".$controller.".php";
 
 if(file_exists($dirController)){
     require_once $dirController;
